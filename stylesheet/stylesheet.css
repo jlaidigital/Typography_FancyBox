@@ -1,0 +1,243 @@
+  article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+  input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+  
+  .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+  
+  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+  
+font-family: 'Molengo', sans-serif;
+font-family: 'Merriweather', serif;
+
+
+
+  .weather_widget{
+    width: 400px;
+    height: 200px;
+    background: #EFEFEF;
+    padding: 15px;
+    box-shadow: 5px 5px 5px #666;
+    margin: 0 auto;
+
+  }
+
+
+
+body {
+  width: 100%;
+  font-size:16px;
+  font-size: 1rem;
+  font-family: 'Molengo', sans-serif;
+}
+  
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #e5e5e5;
+}
+
+
+.background {
+  background: url(../img/man_fishing_by_dock_sm.jpg);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.formWrapper {
+  background-color: rgba(0, 0, 0, 0.5);  
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+details {
+  padding: 5px;
+  margin: 1.5% auto;
+  color: #e5e5e5;
+}
+
+details p {
+  color: #e5e5e5;
+}
+
+
+form {
+  margin: 0 auto;
+
+}
+
+.form a {
+  color: white;
+  font-size: 2rem;
+  line-height: 5rem;
+ 
+}
+
+label {
+  color:#e5e5e5;
+}
+
+input[type=search] {
+  background-color: #EDEDED;
+  padding: 10px;
+  border: 0;
+  color: #33B67C;
+  border-radius: 5px;
+  margin:10px;
+}
+
+
+
+.buttonStyle {
+  background:  #33B67C;
+  color: white;
+  border: none;
+  padding: 11px;
+  margin-top: 13px;
+  width: 20%;
+  border-radius: 5px;
+  width: 188px;
+}
+
+
+
+section.result {
+  text-align: center;
+}
+
+article.answer {
+  background-color: #02779E;
+  padding:4%;
+}
+
+.bestTime {
+  background-color: rgba(111, 154, 190, 0.8);
+  width: 52%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.greatResult {
+  background-color: #C23355;
+  color: white;
+  padding: 3% 5%;
+  width: 100%;
+  display: block;
+  font-style: italic;
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  border-radius: 5px;
+
+}
+
+.timeWrapper {
+  color: white;
+  padding:2%;
+  width: 100%;
+  display: block;
+  height: auto;
+
+}
+
+.moreDetails {
+  background-color: black;
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  padding:2.5%;
+}
+
+.moreInfo {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #3a3a3a;
+  height: 400px;
+}
+
+.locationDetails {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top:30px;
+}
+
+.left, .right {
+  width: 49%;
+  float: left;
+  background-color:#02779E;
+  line-height: 2rem;
+  font-size: 1rem;
+
+}
+
+.right {
+  margin-left: 2%;
+
+}
+
+.right p {
+    color: white;
+    font-size:1rem;
+    margin:0;
+}
+
+.lightBlueBg {
+  background-color: rgba(111, 154, 190, 0.8);
+}
+
+/*.detailsTitle {
+  background-color: #02779E;
+  width: 100%;
+  display: block;
+  color: white;
+}
+*/
+.half p{
+  background-color: black;
+  padding:15px;
+}
+
+.weatherInfo{
+  background-color: #02779E;
+  width: 100%;
+  display: block;
+  float: left;
+  margin:2% 0;
+  line-height: 2rem;
+  font-size: 1rem;
+  }
+
+
+
+
+

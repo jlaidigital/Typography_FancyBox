@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fishing App - It's Time to Go Fishing!</title>
+
+ <link rel="stylesheet" href="stylesheet/stylesheet.css">
+</head>
+<link href='http://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<body>
+	<div class="background">			
+		<div class="formWrapper">
+			<div class="wrapper">
+				<header>
+					<h1>Fishing By Moon Phase!</h1>
+					<p>This API will tell you if today is a good fishing day, calculated based on the moon phase. It will provide the best fishing time for both during the day and night for your location.</p>
+					<p>Details on weather and wind speed are also available if you are fishing on a boat.</p>
+
+					<details>
+						<summary>Read More</summary>
+						<p>Some anglers believe the moon can impact fishing outcome. This application will rate your chance of catching fish with a score out of 5 depending on the moon phase for the night.</p>
+
+						<p>Best fishing time are proven to be 45 minutes before and after sunrise, and 45 minutes before and after sunset.</p>
+
+					</details>
+				
+					<!-- Form goes here -->		
+					<div class="form">
+						 <form action="" class="search">
+						    <label for="search">Enter Province or Country</label><br/>
+						    <input type="search" name="province" id="province"><br>
+							 <label for="search">Enter City</label><br>
+						    <input type="search" name="city" id="city"> <br>
+							<input class="buttonStyle" type="submit" value="GET RESULT !">
+						</form>
+					<a href="#anchorTest"><i class="fa fa-arrow-circle-o-down"></i></a>
+					</div>
+				</header>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- From the weather app -->
+	<section class="result">
+
+			<!-- Response -->		
+		<article class="answer">
+		
+			<!-- Location time-->				
+			<div class="bestTime">
+
+			<!-- Result-->				
+				<div class="resultWrapper">
+				<span id="anchorTest" class="greatResult">{ Good/bad result }</span>
+				</div>
+				
+				<div class="timeWrapper">				
+				<p>Best Morning Fishing Time:
+				<span class="bestMorningTime before">{ sunrise before }</span>
+				<span class="bestMorningTime after">{ sunrise after }</span>
+				</p>
+				<p >Best Night Fishing Time: 
+				<span class="bestNightTime before">{ sunset before }</span>
+				<span class="bestNightTime after">{ sunset after }</span>
+				</p>
+
+				<a href="#detailsLink"><button class="buttonStyle btnColor">Weather Details</button></a>
+				</div>
+
+			</div>
+		</article>
+	</section>
+
+
+		<!-- Answer -->
+	<section class="moreInfo">
+
+				<!-- Location-->
+
+			<article class="locationDetails">
+				<div class="left">
+					<span class="country">} Location {</span>
+					<span class="city">} city {</span>
+
+				</div>
+				<div class="right">
+		     		 <span class="currentTime"> } hour {</span> 
+		     	</div>
+		     		
+				<!--Moon Details -->
+				
+				<div class="left lightBlueBg">
+					<span class="ageOfMoon">{ Age of Moon }</span>
+				</div>
+				<div class="right lightBlueBg">
+					<span class="hemisphere">{ Hemisphere }</span>
+				</div>
+
+				<div class="left">
+					<span class="percentIlluminated">{ Percentage }</span> 
+				</div>
+
+				<div class="right">
+					<span id="detailsLink" class="moonPhase">{ moonphase }</span>
+				</div>
+
+			<!--  Sunrise and sunset time -->		      
+				<div class="left lightBlueBg">
+					<span class="sunriseTime green">} Sunset Time {</span>			     
+				</div>
+				<div class="right lightBlueBg">
+					<span class="sunsetTime">} Sunrise time {</span>     
+				</div>
+
+
+		     <!-- weather -->
+				
+				<div class="windInfo left"> 
+					<span class="windDirection">} Wind Direction </span>
+				</div>
+
+				<div class="windInfo right"> 
+					<span class="windSpeed">} Wind MPH {</span>
+				</div>
+				<div class="weatherInfo">
+					<span class="weather">
+						} Weather {
+					</span>
+				</div>
+			
+		</article>
+	</section>
+
+		
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/fishing-app3.js"></script>
+
+</body>
+</html>
